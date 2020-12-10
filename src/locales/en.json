@@ -10,6 +10,7 @@
   "addMessage": "What do you appreciate?",
   "comments": "Comments",
   "FAQ": "FAQ",
+  "INSURANCE": "Insurance",
   "FellowSuperhero": "Fellow superhero",
   "Balance": "Balance:",
   "aeternityBlockchain": "aeternity blockchain",
@@ -299,7 +300,7 @@
       "Location": "Location",
       "noPinnedItems": "There are no pinned items to display."
     },
-     "Wallet": {
+    "Wallet": {
       "header": "WALLET: Fully P2P, instant tipping with no third-party leeches.",
       "sections": [
         {

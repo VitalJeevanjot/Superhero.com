@@ -38,6 +38,10 @@
       <IconHelp />
       {{ $t('FAQ') }}
     </RouterLink>
+    <RouterLink :to="{ name: 'insurance' }">
+      <IconHelp />
+      {{ $t('INSURANCE') }}
+    </RouterLink>
   </div>
 </template>
 

@@ -4,6 +4,7 @@ import Tracing from './views/admin/Tracing.vue';
 import Conference from './views/Conference.vue';
 import CreateProfile from './views/CreateProfile.vue';
 import FAQ from './views/FAQ.vue';
+import Insurance from './views/Insurance.vue';
 import Governance from './views/Governance.vue';
 import League from './views/League.vue';
 import Maintenance from './views/Maintenance.vue';
@@ -23,7 +24,7 @@ const routes = [
     path: '/',
     name: 'tips',
     component: TipsList,
-    beforeEnter(to, from, next) {
+    beforeEnter (to, from, next) {
       next(to.fullPath.startsWith('/#/') ? to.fullPath.slice(2) : undefined);
     },
   },
@@ -107,6 +108,11 @@ const routes = [
     component: FAQ,
   },
   {
+    path: '/insurance',
+    name: 'insurance',
+    component: Insurance,
+  },
+  {
     path: '/maintenance',
     name: 'maintenance',
     props: true,
@@ -126,7 +132,7 @@ const routes = [
     name: 'conference',
     component: Conference,
     props: true,
-    beforeEnter(to, from, next) {
+    beforeEnter (to, from, next) {
       if (IS_MOBILE_DEVICE) window.location = `https://${process.env.VUE_APP_JITSI_HOST}/${to.params.room || ''}`;
       else next();
     },
